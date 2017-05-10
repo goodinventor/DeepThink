@@ -78,3 +78,14 @@ void Neuron::Update()
     this->D_ij[m] = old_D_ij[m] + this->delta * (this->map_xy - old_D_ij[m]);
   }
 }
+
+void Neuron::Spike()
+{
+  this->v_i = 1;
+  this->u_i = -5;
+  
+  for (i = 0; i < 8; i++)
+  {
+    this->d_ij[i] = this->D_ij[i];
+  }
+}
