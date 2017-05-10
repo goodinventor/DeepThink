@@ -55,6 +55,9 @@ class Neuron
     
     // update parameters over one time step
     void Update();
+  
+    // simulate a spike
+    void Spike();
 };
 
 #endif
