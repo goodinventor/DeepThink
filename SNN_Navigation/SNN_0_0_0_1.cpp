@@ -1,5 +1,5 @@
 //
-// SNN_0_0_0_1.h
+// SNN_0_0_0_1.cpp
 //
 // programmed by George Andrews
 //
@@ -29,7 +29,7 @@ Neuron::Neuron()
   
   for (int j = 0; j < 8; j++)
   {
-    this->D_ij = 5;
+    this->D_ij[j] = 5;
   }
   
   this->delta = 1.0;
