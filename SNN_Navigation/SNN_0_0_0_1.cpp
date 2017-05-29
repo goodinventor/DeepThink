@@ -84,7 +84,7 @@ void Neuron::Spike()
   this->v_i = 1;
   this->u_i = -5;
   
-  for (i = 0; i < 8; i++)
+  for (int i = 0; i < 8; i++)
   {
     this->d_ij[i] = this->D_ij[i];
   }
